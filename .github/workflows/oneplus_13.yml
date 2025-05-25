@@ -126,7 +126,7 @@ jobs:
            cp ../../SukiSU_patch/hooks/syscall_hooks.patch ./
            patch -p1 -F 3 < syscall_hooks.patch
            echo "完成"
-
+      
       - name: Apply HMBird GKI patch
         run: |
          cd kernel_workspace/kernel_platform/common/drivers
@@ -208,6 +208,7 @@ jobs:
          git add -A
          git commit -m "Add HMBird GKI patch" || true
 
+ 
       - name: Apply lz4kd Patches
         if: ${{inputs.enable_feature_y }}
         run: |
