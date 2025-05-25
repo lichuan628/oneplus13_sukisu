@@ -25,7 +25,7 @@ on:
       KERNEL_NAME:
         description: "内核名称修改(中文不行)"
         required: true
-        default: '-By-kuan-FutabaWa'
+        default: '-android15-8-g013ec21bba94-abogki383916444'
       KERNEL_TIME:
        description: "内核构建日期更改(默认为原厂)"
        required: true
@@ -69,8 +69,8 @@ jobs:
           
       - name: Configure Git
         run: |
-         git config --global user.name "Futaba"
-         git config --global user.email "3199167602@qq.com"
+         git config --global user.name "黎川"
+         git config --global user.email "2314059017@qq.com"
 
       - name: Install dependencies
         run: |
